@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Heaver Travel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/CSS/default.css">
+	<link rel="stylesheet" href="/CSS/responsive.css">
+	<link rel="stylesheet" href="/CSS/styles.css">
+</head>
+
+<body>
+	<div id="top">
+		<header class="container">
+			<img src="/Images/Woodland Web Works.png" alt="">
+			<h1>Where You Can Reach Me</h1>
+			<p>"Take the path less traveled"</p>
+			<nav>
+				<button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+					<span>&#9776;</span>
+				</button>
+				<ul>
+					<li><a href="/HTML/index.html">Home</a></li>
+					<li><a href="/HTML/about.html">About</a></li>
+					<li><a href="/HTML/projects.html">Projects</a></li>
+					<li><a href="/HTML/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="icon-nav">
+				<ul>
+					<li><a href="https://www.linkedin.com/in/tanner-b-812b70106/"><i class="fa-brands fa-linkedin"></i></a></li>
+					<li><a href="https://github.com/ImTheOnlyBebo"><i class="fa-brands fa-github"></i></a></li>
+				</ul>
+			</div>
+		</header>
+		<hr>
+	</div>
+
+	<div class="contact-wrap">
+		<div class="img-wrap">
+			<img src="/Images/redwood-forest.heic" alt="">
+		</div>
+	
+		<section class="form">
+			<script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+	<script>
+		hbspt.forms.create({
+			region: "na1",
+			portalId: "46527923",
+			formId: "55fb0eed-394d-43c5-a8ef-305a456a0bd1"
+		});
+	</script>
+	
+		</section>
+	</div>
+
+	<hr>
+	<footer>
+		<h3>Check out the rest of the site!</h3>
+		<div class="foot-nav">
+			<ul>
+				<li><a href="/HTML/index.html">Home</a></li>
+				<li><a href="/HTML/about.html">About</a></li>
+				<li><a href="/HTML/contact.html">Contact</a></li>
+				<li><a href="/HTML/projects.html">Projects</a></li>
+			</ul>
+		</div>
+		<div class="bottom-words">
+			<p>Thanks for visiting!</p>
+			<p>Built by Tanner Bibeau</p>
+		</div>
+	</footer>
+
+	<a id="scrollUp" href="#top">
+		<i class="fa-solid fa-arrow-up"></i>
+	</a>
+
+
+
+
+
+<script src="https://kit.fontawesome.com/bfee64afc7.js" crossorigin="anonymous"></script>
+
+<script>
+	const navbutton = document.querySelector('button[aria-expanded]');
+
+	function toggleNav({ target }) {
+		const expanded = target.getAttribute('aria-expanded') == 'true' || false;
+		navbutton.setAttribute('aria-expanded', !expanded);
+	}
+
+	navbutton.addEventListener('click', toggleNav);
+</script>
+
+</body>
+
+</html>

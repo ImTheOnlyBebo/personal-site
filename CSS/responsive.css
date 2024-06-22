@@ -1,0 +1,188 @@
+@media (max-width: 480px) {
+	[aria-controls="navbarDropdown"] {
+		display: block;
+	}
+
+	[aria-expanded="false"]~ul {
+		display: none;
+	}
+
+	[aria-expanded="true"]~ul {
+		display: flex;
+		position: absolute;
+	}
+
+	.navbar-toggler {
+		background-color: var(--green);
+		border: 0px solid;
+		position: fixed;
+		border-radius: var(--s5);
+		right: var(--s25);
+		top: var(--s60);
+		z-index: 10;
+
+	}
+
+	.navbar-toggler:active {
+		transform: scale(0.9);
+	}
+
+	.navbar-toggler span {
+		cursor: pointer;
+		pointer-events: none;
+		font-size: var(--s25);
+	}
+
+	body {
+		text-align: center;
+	}
+
+	.about-content h2,
+	.about-content h1,
+	.about-content .title {
+		text-align: center;
+	}
+}
+
+@media screen and (min-width: 480px) {
+
+	header h1,
+	header p {
+		margin-left: var(--s120);
+	}
+
+	#top header img {
+		top: var(--s25);
+	}
+
+	.navbar-toggler {
+		display: none;
+	}
+
+	#top ul {
+		display: flex;
+		gap: var(--s20);
+	}
+
+	.icon-nav ul {
+		padding-top: var(--s12);
+	}
+
+	.photo-wrap.hero img {
+		width: 100%;
+	}
+
+	.cards {
+		display: flex;
+		gap: var(--s25);
+		height: 50vh;
+	}
+
+	.photo-wrap img {
+		height: 65%;
+	}
+
+	.border-text {
+		margin: 0 25%;
+		text-align: center;
+	}
+
+	section.hero-foot {
+		margin: 0 var(--s100);
+	}
+
+	footer {
+		margin: 0 25%;
+	}
+
+	footer .foot-nav ul {
+		justify-content: space-between;
+	}
+
+	/* about page */
+
+	.about-content {
+		margin: auto;
+	}
+
+	.about-content h1,
+	.title {
+		text-align: center;
+	}
+
+	.intro h2 {
+		text-align: end;
+		margin-right: 200px;
+	}
+
+	div.intro img {
+		width: 50%;
+		float: left;
+		margin-right: var(--s20);
+		margin-bottom: var(--s20);
+	}
+
+	.goals {
+		height: 50vh;
+	}
+
+	div.goals img {
+		width: 50%;
+		float: right;
+		margin-left: var(--s20);
+	}
+
+	div.ethic img {
+		width: 50%;
+		float: left;
+		margin-right: var(--s20);
+		height: 60vh;
+	}
+
+	/* Projects */
+
+	div.live-wrapper {
+		display: flex;
+		height: 80%;
+	}
+
+	.live-wrapper .radius-a,
+	.live-wrapper .radius-b {
+		border-radius: var(--s10);
+	}
+
+	.site iframe {
+		height: 55vh;
+	}
+
+	.gallery.container {
+		margin:0 auto;
+	}
+
+	/* contact */
+
+	.contact-wrap {
+		display: flex;
+		flex-direction: row-reverse;
+		margin: 0 var(--s25);
+		gap: var(--s25);
+	}
+
+	.contact-wrap .img-wrap {
+		background-color: transparent;
+	}
+
+	.contact-wrap .img-wrap img {
+		border-radius: var(--s10);
+	}
+
+	.contact-wrap .img-wrap,
+	.contact-wrap .form {
+		margin: 0;
+		border-radius: var(--s10);
+	}
+
+	section.form {
+		width: 100%;
+	}
+}

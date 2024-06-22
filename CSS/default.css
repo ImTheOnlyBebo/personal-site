@@ -1,0 +1,127 @@
+:root {
+	--s5 : .3125rem;
+	--s10 : .625rem;
+	--s12 : .75rem;
+	--s15 : .9375rem;
+	--s18 : 1.125rem;
+	--s20 : 1.25rem;
+	--s25 : 1.5625rem;
+	--s30 : 1.875rem;
+	--s40 : 2.5rem;
+	--s50 : 3.125rem;
+	--s60 : 3.75rem;
+	--s70 : 4.375rem;
+	--s100 : 6.25rem;
+	--s120 : 7.5rem;
+	--s150 : 9.375rem;
+	--green: #A1BE95;
+	--pink: #F98866;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body,
+html {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0;
+}
+
+body {
+	background-color: var(--pink);
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+a {
+	color: inherit;
+	padding: var(--s10);
+}
+
+a:hover {
+	color: white;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;
+	padding: 0, var(--s15);
+}
+
+.btn {
+	background-color: var(--green);
+	border-radius: var(--s18);
+	font-size: var(--s15);
+	padding: var(--s5) var(--s15);
+	border: 0.5px solid black;
+}
+
+.btn a {
+	text-decoration: none;
+}
+
+.btn:active {
+	transform: scale(0.9);
+}
+
+
+
+
+
+
+@media (min-width: 480px) {
+	.container {
+		max-width: 460px;
+	}
+}
+
+@media (min-width: 768px) {
+	.container {
+		max-width: 740px;
+	}
+}
+
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1140px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

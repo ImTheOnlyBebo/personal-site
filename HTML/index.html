@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Heaver Travel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/CSS/default.css">
+	<link rel="stylesheet" href="/CSS/responsive.css">
+	<link rel="stylesheet" href="/CSS/styles.css">
+</head>
+
+<body>
+	<div id="top">
+		<header class="container">
+			<img src="/Images/Woodland Web Works.png" alt="">
+			<h1>Woodland Web Works</h1>
+			<p>"Building your site with Every pixel in mind!"</p>
+			<nav>
+				<button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+					<span>&#9776;</span>
+				</button>
+				<ul>
+					<li><a href="/HTML/index.html">Home</a></li>
+					<li><a href="/HTML/about.html">About</a></li>
+					<li><a href="/HTML/projects.html">Projects</a></li>
+					<li><a href="/HTML/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="icon-nav">
+				<ul>
+					<li><a href="https://www.linkedin.com/in/tanner-b-812b70106/"><i class="fa-brands fa-linkedin"></i></a></li>
+					<li><a href="https://github.com/ImTheOnlyBebo"><i class="fa-brands fa-github"></i></a></li>
+				</ul>
+			</div>
+		</header>
+		<hr>
+	</div>
+
+		<section class="photo-wrap hero">
+			<img src="/Images/pexels-eberhardgross-1670187.jpg" alt="desert mountains">
+			<div>
+				<h2>Establish Your Online Presence</h2>
+				<p>I charge $100 per basic page, (Extras are extra). Send me an email to get a free quote!</p>
+				<button class="btn"><a href="/HTML/contact.html">Send an Email</a></button>
+			</div>
+		</section>
+		
+		<div class="cards">
+			<section class="photo-wrap container">
+				<img src="/Images/coding1.jpg" alt="coding">
+				<div>
+					<h2>Stay Learning</h2>
+					<p>From keeping up with new features to refactoring code, I'll provide the best service I can!</p>
+				</div>
+			</section>
+	
+			<section class="photo-wrap container">
+				<img src="/Images/computer-outside.jpg" alt="computer-outside">
+				<div>
+					<h2>Finding Peace and Quiet</h2>
+					<p>With working remote I can find better times to work and, while still keeping up with my hobbies!</p>
+				</div>
+			</section>
+			
+			<section class="photo-wrap container">
+				<img src="/Images/pexels-nikhlesh-tyagi-1610382-3090487.jpg" alt="moon-with-mountains">
+				<div>
+					<h2>Understanding</h2>
+					<p>Plans change, just as the seasons do, so I will change your website till the desired output is reached!</p>
+				</div>
+			</section>
+		</div>
+
+		<section class="text-block">
+			<div class="border-text">
+				<hr>
+				<h2>"Simple, like uncarved wood."</h2>
+				<p>- Lao Tzu</p>
+				<hr>
+			</div>
+			<div class="plain-text">
+				<p>When I build for you, you will have a sense of familiarity as it will be easy to navigate and understand</p>
+			</div>
+		</section>
+
+		<section class="hero-foot">
+			<div class="info-block">
+				<h2>About Me</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<a href="/HTML/about.html">More Of Me</a>
+			</div>
+
+			<div class="info-block">
+				<h2>Quick Contact</h2>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+				<a href="/HTML/contact.html">More Connections</a>
+			</div>
+		</section>
+
+		<hr>
+		<footer>
+			<h3>Check out the rest of the site!</h3>
+			<div class="foot-nav">
+				<ul>
+					<li><a href="/HTML/index.html">Home</a></li>
+					<li><a href="/HTML/about.html">About</a></li>
+					<li><a href="/HTML/contact.html">Contact</a></li>
+					<li><a href="/HTML/projects.html">Projects</a></li>
+				</ul>
+			</div>
+			<div class="bottom-words">
+				<p>Thanks for visiting!</p>
+				<p>Built by Tanner Bibeau</p>
+			</div>
+		</footer>
+
+		<a id="scrollUp" href="#top">
+			<i class="fa-solid fa-arrow-up"></i>
+		</a>
+
+
+
+
+
+	<script src="https://kit.fontawesome.com/bfee64afc7.js" crossorigin="anonymous"></script>
+
+	<script>
+		const navbutton = document.querySelector('button[aria-expanded]');
+
+		function toggleNav({ target }) {
+			const expanded = target.getAttribute('aria-expanded') == 'true' || false;
+			navbutton.setAttribute('aria-expanded', !expanded);
+		}
+
+		navbutton.addEventListener('click', toggleNav);
+	</script>
+</body>
+
+</html>

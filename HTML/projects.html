@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Heaver Travel</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="/CSS/default.css">
+	<link rel="stylesheet" href="/CSS/responsive.css">
+	<link rel="stylesheet" href="/CSS/styles.css">
+</head>
+
+<body>
+	<div id="top">
+		<header class="container">
+			<img src="/Images/Woodland Web Works.png" alt="">
+			<h1>My Work</h1>
+			<p>"Carefully Crafted as if I have to deal with safety standards"</p>
+			<nav>
+				<button class="navbar-toggler" aria-expanded="false" aria-controls="navbarDropdown">
+					<span>&#9776;</span>
+				</button>
+				<ul>
+					<li><a href="/HTML/index.html">Home</a></li>
+					<li><a href="/HTML/about.html">About</a></li>
+					<li><a href="/HTML/projects.html">Projects</a></li>
+					<li><a href="/HTML/contact.html">Contact</a></li>
+				</ul>
+			</nav>
+			<div class="icon-nav">
+				<ul>
+					<li><a href="https://www.linkedin.com/in/tanner-b-812b70106/"><i class="fa-brands fa-linkedin"></i></a></li>
+					<li><a href="https://github.com/ImTheOnlyBebo"><i class="fa-brands fa-github"></i></a></li>
+				</ul>
+			</div>
+		</header>
+		<hr>
+	</div>
+
+	<div class="live-wrapper">
+		<section class="radius-a live-site">
+			<div class="text">
+				<h2>Beginner Site</h2>
+				<p>This project taught me the very basics of web development. This was my first multi-page site, and it shows. No layout design, no flow, just simply using the elements and tags. The animation took me awhile and it still breaks, but I learned alot and it was fun! After this, website development became easier!</p>
+			</div>
+			<div class="site">
+				<iframe height="300" width="100%" title="Beginner-site" src="https://practice-youtube.vercel.app" frameborder="0"></iframe>
+				<a href="https://practice-youtube.vercel.app">Click to view Website</a>
+			</div>
+		</section>
+		
+		<section class="radius-b live-site">
+			<div class="text">
+				<h2>Basic Site</h2>
+				<p>Here is a more professional site, something I would build for a customer. This taught me how a layout works and most importantly, how to build mobile first! Now im still a junior web developer but I can still make an amazing product. Im not too creative but I have classmates to reach out to!</p>
+			</div>
+			<div class="site">
+				<iframe class="code-rad" height="300" width="100%" title="Basic-site" src="https://code-rad-example.vercel.app" frameborder="0"></iframe>
+				<a href="https://code-rad-example.vercel.app">Click to view Website</a>
+			</div>
+		</section>
+	</div>
+
+	<section class="gallery container">
+		<h2>Other Projects I've Made</h2>
+		<div class="others">
+			<img src="/Images/google page.png" alt="google">
+			<h4>Yes I replicated the Google page, just the styles not the functionality</h4>
+			<img src="/Images/reactive-form.png" alt="form">
+			<h4>Just a basic form styling</h4>
+			<img src="/Images/tres_cards_laptop.png" alt="cards">
+			<h4>Just a basic card layout</h4>
+		</div>
+	</section>
+
+	
+	
+	<hr>
+	<footer>
+		<h3>Check out the rest of the site!</h3>
+		<div class="foot-nav">
+			<ul>
+				<li><a href="/HTML/index.html">Home</a></li>
+				<li><a href="/HTML/about.html">About</a></li>
+				<li><a href="/HTML/contact.html">Contact</a></li>
+				<li><a href="/HTML/projects.html">Projects</a></li>
+			</ul>
+		</div>
+		<div class="bottom-words">
+			<p>Thanks for visiting!</p>
+			<p>Hand Built by Tanner Bibeau</p>
+		</div>
+	</footer>
+
+	<a id="scrollUp" href="#top">
+		<i class="fa-solid fa-arrow-up"></i>
+	</a>
+
+
+
+
+
+<script src="https://kit.fontawesome.com/bfee64afc7.js" crossorigin="anonymous"></script>
+
+<script>
+	const navbutton = document.querySelector('button[aria-expanded]');
+
+	function toggleNav({ target }) {
+		const expanded = target.getAttribute('aria-expanded') == 'true' || false;
+		navbutton.setAttribute('aria-expanded', !expanded);
+	}
+
+	navbutton.addEventListener('click', toggleNav);
+</script>
+</body>
+
+</html>
