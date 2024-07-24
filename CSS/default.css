@@ -16,6 +16,9 @@
 	--s150 : 9.375rem;
 	--green: #A1BE95;
 	--pink: #F98866;
+	--wood: #818086;
+	--grad-1: #44531A;
+	--grad-2: #081600;
 }
 
 *,
@@ -75,11 +78,13 @@ p {
 	border-radius: var(--s18);
 	font-size: var(--s15);
 	padding: var(--s5) var(--s15);
-	border: 0.5px solid black;
+	border: 0.5px solid transparent;
+	text-decoration: none;
 }
 
 .btn a {
 	text-decoration: none;
+	color: white;
 }
 
 .btn:active {
