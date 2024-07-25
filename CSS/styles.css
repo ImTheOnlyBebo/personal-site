@@ -514,8 +514,7 @@ footer {
 }
 
 #aboutPrice {
-	position: absolute;
-	top: 140vh;
+	padding-bottom: 1%;
 }
 
 .about-price {

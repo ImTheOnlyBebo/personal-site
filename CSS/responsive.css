@@ -49,9 +49,19 @@
 	/* index */
 
 	/* nav */
+	.navbar-toggler {
+		top: 10%;
+	}
+
 	header .logo-wrap {
-		left: var(--s12);
-		top: var(--s50);
+		left: 0;
+		top: var(--s30);
+	}
+
+	#top header h1 {
+		position: relative;
+    left: -15vw;
+    width: 70vw;
 	}
 
 	/* hero section */
@@ -98,6 +108,12 @@
 	section .square-container {
 		top: 25%;
 		left: 50%;
+	}
+
+	div.square-btn {
+		left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
 	}
 
 	section .square-text {
@@ -195,7 +211,7 @@
 	}
 
 	div.img-wrap p {
-		bottom: -20%;
+		bottom: -28%;
 		width: 80%;
 	}
 
